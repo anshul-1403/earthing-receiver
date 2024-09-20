@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Earth Monitor</title>
+    <link rel="stylesheet" href="./guidelineCss.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Earth Monitor</h1>
+        <p>Team StrawHats - Problem Statement ID: 1582</p>
+    </header>
+
+    <section class="idea-solution">
+        <h2>Idea/Solution</h2>
+        <ul>
+            <li>Leakage Current Calculation: Calculating current through changes in flux.</li>
+            <li>Earth Resistance Measurement: Measuring resistance using the fall of potential method (3-pole).</li>
+            <li>Street Light Monitoring: Checking if street lights are glowing for timely maintenance.</li>
+            <li>Self-error detection: Automatically triggers alerts for malfunctions.</li>
+            <li>Data Transmission: Transmitting data over a wide range without internet.</li>
+            <li>Storing Data: Using an SQL database for future use.</li>
+            <li>Monitoring: Displaying the data on a web application.</li>
+        </ul>
+    </section>
+
+    <section class="problem-resolution">
+        <h2>Problem Resolution</h2>
+        <ul>
+            <li>Micro-controller: Arduino compatibility with sensors.</li>
+            <li>Real-time Monitoring: Instant alerts for earth leakage detection.</li>
+            <li>Remote Deployment: Easy setup in remote locations.</li>
+        </ul>
+    </section>
+
+    <section class="uniqueness">
+        <h2>Uniqueness</h2>
+        <ul>
+            <li>Non-Contact Measurement: Accurate current measurement.</li>
+            <li>Customisable: Modular solution for specific needs.</li>
+        </ul>
+    </section>
+
+    <section class="impact-benefits">
+        <h2>Impact and Benefits</h2>
+        <ul>
+            <li>Enhanced Electrical Safety.</li>
+            <li>Proactive Fault Detection.</li>
+            <li>Reduced Equipment Downtime.</li>
+            <li>Improved Productivity.</li>
+            <li>User-Friendly Interface.</li>
+            <li>Customizable Alerts.</li>
+        </ul>
+    </section>
+
+    <section class="images">
+        <img src="sih.png" alt="Description of Image 1" />
+        <img src="3 pole.png" alt="Description of Image 2" />
+    </section>
+
+    <footer>
+        <p>References:</p>
+        <ul>
+            <li>H. W. Beaty and J. C. Sumner, Electric Power Systems Quality.</li>
+            <li>IEEE Std 81-2012, Guide for Measuring Earth Resistivity.</li>
+            <li>B. Schlenker, Internet of Things with Arduino Blueprints.</li>
+            <li>J. K. Pinto and P. T. G. Oliveira, Electrical Safety and Protective Devices.</li>
+        </ul>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateX(-50px)';
+            setTimeout(() => {
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                section.style.opacity = 1;
+                section.style.transform = 'translateX(0)';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
